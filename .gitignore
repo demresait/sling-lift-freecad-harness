@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+.env
+.idea/
+/FreeCAD/*/results/
+*.fetch-part
+
+# macOS
+.DS_Store
+
+# CAD binaries live in Azure blob storage (see tools/fetch.py).
+# The small .png renders are committed for inspection before downloading.
+*.FCStd
+*.FCStd1
+
+# The .stl meshes are 28-58 MB each and are pinned in task.toml, so
+# tools/fetch.py brings them down with the documents. Only the small .png
+# renders are committed.
+*.stl
